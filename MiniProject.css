@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    
+}
+
+/* body{
+    background: url("cameraPic.jpg");
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+} */
+
+.main_box{
+    background: url("cameraPic.jpg");
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.btn_one i{
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.5s linear;
+}
+
+.sidebar_menu{
+    width:250px;
+    height: 100vh;
+    position: fixed;
+    left: -300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s linear;
+    
+    
+}
+
+.sidebar_menu .logo{
+    position: absolute; 
+    line-height: 60px;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+
+}
+
+.sidebar_menu .logo a {
+    text-decoration: none;
+    font-weight: 600px;
+    color: white;
+    position: absolute;
+    left: 40px;
+}
+
+.btn_two i{
+    color: grey;
+    font-size: 18px;
+    font-weight: 800;
+    position: absolute;
+    left: 220px;
+    line-height: 60px;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+.sidebar_menu .menu ul li{
+    margin: 2px;
+    padding: 10px 10px;
+}
+
+.sidebar_menu .menu .list-1 li i,a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600px;
+    font: 20px;
+}
+
+.sidebar_menu .menu .list-1 li i{
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 32%;
+    bottom: 25px;    
+}
+
+.sidebar_menu .social_media i{
+    color: white;
+    padding: 0 2px;
+    opacity: 0.5;
+}
+
+#check{
+    display:none;
+}
+
+.sidebar_menu .menu .list-1 li:hover{
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.btn_two i:hover{
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+.btn_one i:hover{
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .btn_one i {
+    opacity:0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}
